@@ -1,62 +1,115 @@
-# ClothesSwap
+# Clothes Swap - AI-Powered Virtual Try-On Platform
 
-ClothesSwap 是一个旨在促进二手衣物交换和可持续时尚的平台。用户可以上传、浏览、交换和管理自己的衣物，实现资源再利用，减少浪费，践行绿色生活方式。
+[English](#english) | [中文](#中文)
 
-## 项目简介
+## English
 
-ClothesSwap 提供一个安全便捷的线上衣物交换社区，鼓励用户将闲置的衣物分享给有需要的人。平台支持衣物发布、浏览、申请交换、消息沟通等功能，帮助用户以环保的方式更新衣橱。
+### Overview
+Clothes Swap is an innovative AI-powered virtual try-on platform that revolutionizes the online shopping experience. Our advanced AI technology allows users to see how clothes will look on them before making a purchase, eliminating the uncertainty of online shopping.
 
-## 主要功能
+### Features
+- **AI-Powered Virtual Try-On**: Try on any outfit virtually with our advanced AI technology
+- **Multiple Categories**: Support for casual wear, formal attire, and more
+- **High-Quality Results**: HD generation with no watermark
+- **Commercial Use**: Suitable for both personal and business use
+- **Private Generation**: Secure and private try-on experience
+- **Advanced Refine**: Fine-tune your virtual try-on results
 
-- **用户注册与登录**：支持用户账户的注册、登录和个人资料管理。
-- **衣物发布与浏览**：用户可上传衣物图片和描述，浏览他人发布的衣物信息。
-- **衣物交换**：支持发起交换请求并进行确认，形成衣物流转。
-- **消息通知**：及时发送交换进展和系统消息，方便用户沟通。
-- **搜索与筛选**：按类别、尺码、品牌等多条件筛选衣物，快速找到心仪单品。
+### Technology Stack
+- Next.js with TypeScript
+- React for component development
+- Tailwind CSS for styling
+- Shadcn UI components
+- Next-auth for authentication
+- Next-intl for internationalization
+- Stripe for payment processing
 
-## 技术栈
+### Project Structure
+```
+├── app/                    # Next.js App Router pages and API routes
+│   ├── [locale]/          # Locale-specific pages
+│   ├── api/               # API routes
+│   └── theme.css          # Theme styles
+├── components/            # React components
+│   ├── blocks/           # Layout blocks
+│   └── ui/               # Reusable UI components
+├── contexts/             # React contexts
+├── i18n/                 # Internationalization
+│   ├── pages/landing/    # Page-specific translations
+│   └── messages/         # Global messages
+├── types/                # TypeScript type definitions
+├── models/               # Data models and operations
+├── services/             # Business logic
+├── public/              # Static assets
+└── lib/                 # Custom libraries and functions
+```
 
-- 前端：React / Vue / (请补充实际前端框架)
-- 后端：Node.js / Express / (请补充实际后端框架)
-- 数据库：MongoDB / MySQL / (请补充实际数据库)
-- 其它：Docker、GitHub Actions 等持续集成工具
+### Getting Started
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up environment variables in `.env.development`
+4. Run the development server: `npm run dev`
 
-## 快速开始
+### Pricing Plans
+- **Pay as you go**: $4.9 USD (80 images, valid for 1 month)
+- **Standard**: $19.9 USD (500 images, valid for 1 month)
+- **Premium**: $49.9 USD (1500 images, valid for 1 month)
 
+## 中文
+
+### 概述
+Clothes Swap 是一个创新的 AI 驱动的虚拟试衣平台，彻底改变了在线购物体验。我们的先进 AI 技术让用户可以在购买前看到衣服穿在身上的效果，消除了在线购物的不确定性。
+
+### 功能特点
+- **AI 驱动的虚拟试衣**：使用先进的 AI 技术虚拟试穿任何服装
+- **多种类别**：支持休闲装、正装等多种服装类型
+- **高质量效果**：高清生成，无水印
+- **商业用途**：适用于个人和商业用途
+- **私密生成**：安全私密的试衣体验
+- **高级优化**：微调虚拟试衣效果
+
+### 技术栈
+- Next.js 与 TypeScript
+- React 组件开发
+- Tailwind CSS 样式
+- Shadcn UI 组件
+- Next-auth 认证
+- Next-intl 国际化
+- Stripe 支付处理
+
+### 项目结构
+```
+├── app/                    # Next.js App Router 页面和 API 路由
+│   ├── [locale]/          # 特定语言页面
+│   ├── api/               # API 路由
+│   └── theme.css          # 主题样式
+├── components/            # React 组件
+│   ├── blocks/           # 布局块
+│   └── ui/               # 可重用 UI 组件
+├── contexts/             # React 上下文
+├── i18n/                 # 国际化
+│   ├── pages/landing/    # 页面特定翻译
+│   └── messages/         # 全局消息
+├── types/                # TypeScript 类型定义
+├── models/               # 数据模型和操作
+├── services/             # 业务逻辑
+├── public/              # 静态资源
+└── lib/                 # 自定义库和函数
+```
+
+### 开始使用
 1. 克隆仓库
-    ```bash
-    git clone https://github.com/CaysonGuo/clothesswap.git
-    ```
-2. 安装依赖  
-    ```bash
-    cd clothesswap
-    npm install
-    ```
-3. 配置环境变量  
-    参考 `.env.example` 文件，填写数据库、端口等配置信息。
-4. 启动项目  
-    ```bash
-    npm run dev
-    ```
+2. 安装依赖：`npm install`
+3. 在 `.env.development` 中设置环境变量
+4. 运行开发服务器：`npm run dev`
 
-## 贡献指南
+### 价格方案
+- **按需付费**：$4.9 USD（80 张图片，有效期 1 个月）
+- **标准版**：$19.9 USD（500 张图片，有效期 1 个月）
+- **高级版**：$49.9 USD（1500 张图片，有效期 1 个月）
 
-欢迎对 ClothesSwap 进行贡献！您可以通过以下方式参与：
+## Quick Start
 
-- 提交 issue 报告 bug 或建议新功能
-- 提交 pull request 修复问题或完善功能
-- 优化文档或国际化支持
+1. Clone the repository
 
-请在贡献前阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 以了解详细规范。
-
-## 许可证
-
-本项目采用 [MIT License](LICENSE)。
-
-## 联系方式
-
-如有任何问题或建议，欢迎联系仓库维护者 [CaysonGuo](https://github.com/CaysonGuo)。
-
----
-
-让我们一起用 ClothesSwap 让衣物流转，低碳环保，传递爱心！
+```
